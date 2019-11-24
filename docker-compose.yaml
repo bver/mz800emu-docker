@@ -1,0 +1,14 @@
+---
+
+mz800emu:
+    build: .
+    net: "host"
+    devices: 
+        - "/dev/dri"
+        - "/dev/snd"
+    environment:
+        - "DISPLAY"
+    volumes:
+        - "$HOME/.Xauthority:/root/.Xauthority:rw" 
+        - "$PWD:/root/host"
+
