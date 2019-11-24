@@ -2,8 +2,7 @@ FROM centos:7
 
 LABEL description="MZ-800 Emulator by Michal Hucik \
                    https://sourceforge.net/projects/mz800emu/ \ 
-                   runs in Docker" \
-      maintainer="pavel@suchmann.cz"
+                   runs in Docker"
 
 RUN yum groupinstall -y 'Development Tools'
 RUN yum install -y mercurial make cmake autoconf automake libtool 

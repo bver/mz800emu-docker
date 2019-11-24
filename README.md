@@ -3,7 +3,7 @@
 [Sharp MZ-800 Emulator](https://sourceforge.net/projects/mz800emu/)
 by [Michal Hučík](https://www.ordoz.com/sharp/) runs in a Docker container.
 
-This great emulator of the famous 8bit-era computer can run natively on Windows and Centos 7 --
+This great emulator of the famous 8bit-era computer runs natively on Windows and Centos 7 --
 please see [the project page](https://sourceforge.net/projects/mz800emu/) for details.
 
 Emulation containerization comes in handy for other host systems.
@@ -36,8 +36,7 @@ The workaround (on your host machine) is
 * Even with the issue above fixed the ALSA lib complains and produces awful sound.
 
 ## Projects interrelationship
-There were _no_ modifications made to the original _mz800emu_ sources. They are fetched in the
-docker build time AS IS from _sourceforge_ and compiled according
+There were _no_ modifications made to the original _mz800emu_ sources. They are fetched AS IS from _sourceforge_ in the docker build time and then compiled according
 [author's documentation](https://sourceforge.net/p/mz800emu/code/HEAD/tree/trunk/Documentation/HOWTO_Centos7.txt).
 
 Both projects are covered by the same [license](https://www.gnu.org/licenses/gpl-3.0.en.html).
