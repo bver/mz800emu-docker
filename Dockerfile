@@ -22,11 +22,12 @@ RUN tar zxvf SDL2-2.0.5.tar.gz
 WORKDIR SDL2-2.0.5
 RUN ./configure && make && make install
 
-WORKDIR /root 
-RUN svn checkout https://svn.code.sf.net/p/mz800emu/code/ mz800emu
-WORKDIR mz800emu/trunk
+WORKDIR /root
+RUN yum install -y ca-certificates
+RUN svn checkout https://svn.code.sf.net/p/mz800emu/code/trunk/ mz800emu_trunk
+WORKDIR mz800emu_trunk
 RUN make CONF=Debug-Linux
 
-CMD ["/root/mz800emu/trunk/dist/Debug-Linux/GNU-Linux/mz800emu"] 
+CMD ["/root/mz800emu_trunk/dist/Debug-Linux/GNU-Linux/mz800emu"]
 
 

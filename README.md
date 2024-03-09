@@ -35,6 +35,9 @@ The workaround (on your host machine) is
 
 * Even with the issue above fixed the ALSA lib complains and produces awful sound.
 
+## Changelog
+* fixing CA certificate chain 2024-03-09
+
 ## Projects interrelationship
 There were _no_ modifications made to the original _mz800emu_ sources. They are fetched AS IS from _sourceforge_ in the docker build time and then compiled according
 [author's documentation](https://sourceforge.net/p/mz800emu/code/HEAD/tree/trunk/Documentation/HOWTO_Centos7.txt).
